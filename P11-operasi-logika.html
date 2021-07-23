@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operasi Logika</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <h2>Belajar Operasi Logika</h2>
+        <ul>
+          <li>
+            Operasi logika merupakan operasi yang digunakan untuk 2 (dua) buah
+            data boolean
+          </li>
+          <li>
+            Hasil yang didapatkan dari operasi logika yaitu boolean (true/false)
+          </li>
+        </ul>
+
+        <!-- Operator Perbandingan -->
+        <h4>Operator Perbandingan</h4>
+        <table class="table">
+          <thead>
+            <th>Operator</th>
+            <th>Keterangan</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&&</td>
+              <td>Dan</td>
+            </tr>
+            <tr>
+              <td>||</td>
+              <td>Atau</td>
+            </tr>
+            <tr>
+              <td>!</td>
+              <td>Kebalikan</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Operator && (dan) -->
+        <h4>Operator && (dan)</h4>
+        <table class="table">
+          <thead>
+            <th>Nilai 1</th>
+            <th>Operator</th>
+            <th>Nilai 2</th>
+            <th>Hasil</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>true</td>
+              <td>&&</td>
+              <td>true</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>true</td>
+              <td>&&</td>
+              <td>false</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>false</td>
+              <td>&&</td>
+              <td>true</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>false</td>
+              <td>&&</td>
+              <td>false</td>
+              <td>false</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Operator || (atau) -->
+        <h4>Operator || (atau)</h4>
+        <table class="table">
+          <thead>
+            <th>Nilai 1</th>
+            <th>Operator</th>
+            <th>Nilai 2</th>
+            <th>Hasil</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>true</td>
+              <td>||</td>
+              <td>true</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>true</td>
+              <td>||</td>
+              <td>false</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>false</td>
+              <td>||</td>
+              <td>true</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>false</td>
+              <td>||</td>
+              <td>false</td>
+              <td>false</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const nilaiUjian = 70;
+    const nilaiAbsen = 70;
+
+    const lulusUjian = nilaiUjian > 75;
+    const lulusAbsen = nilaiAbsen > 75;
+
+    const lulus = lulusUjian && lulusAbsen;
+    document.writeln(lulus);
+  </script>
+</html>

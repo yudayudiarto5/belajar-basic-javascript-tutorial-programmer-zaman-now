@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operasi Aritmatika</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <h2>Belajar Operasi Aritmatika</h2>
+        <ul>
+          <li>
+            Tipe data string atau text merupakan tipe data yang berisikan
+            kumpulan kosong atau lebih karakter
+          </li>
+          <li>
+            Pada Javascript, untuk membuat data dengan tipe string. kita perlu
+            menggunakan " (petik dua) atau ' (petik satu) sebelum dan setelah
+            isi text nya."
+          </li>
+        </ul>
+        <h4>String bisa ditambahkan</h4>
+        <p>Mengunakan tanda + (plus)</p>
+
+        <!-- Operator Aritmatika -->
+        <h4>Operator Aritmatika</h4>
+        <table class="table">
+          <thead>
+            <th>Operator</th>
+            <th>Keterangan</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>+</td>
+              <td>Pertambahan</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>Pengurangan</td>
+            </tr>
+            <tr>
+              <td>*</td>
+              <td>Perkalian</td>
+            </tr>
+            <tr>
+              <td>\</td>
+              <td>Pembagian</td>
+            </tr>
+            <tr>
+              <td>%</td>
+              <td>Module</td>
+            </tr>
+            <tr>
+              <td>**</td>
+              <td>pangkat</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Operator Assigmented Assigments -->
+        <h4>Operator Assigmented Assigments</h4>
+        <table class="table">
+          <thead>
+            <th>Operator Matematika</th>
+            <th>Keterangan (Operator Augmented Assigments)</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>result = result + 10</td>
+              <td>result += 10</td>
+            </tr>
+            <tr>
+              <td>result = result - 10</td>
+              <td>result -= 10</td>
+            </tr>
+            <tr>
+              <td>result = result * 10</td>
+              <td>result *= 10</td>
+            </tr>
+            <tr>
+              <td>result = result \ 10</td>
+              <td>result \= 10</td>
+            </tr>
+            <tr>
+              <td>result = result % 10</td>
+              <td>result %= 10</td>
+            </tr>
+            <tr>
+              <td>result = result ** 10</td>
+              <td>result **= 10</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Operator Unary -->
+        <h4>Operator Unary</h4>
+        <table class="table">
+          <thead>
+            <th>Operator</th>
+            <th>Keterangan</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>+</td>
+              <td>Menandakan nilai positif</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>Menandankan nilai negatif</td>
+            </tr>
+            <tr>
+              <td>++</td>
+              <td>Increment, menaikan nilai + 1</td>
+            </tr>
+            <tr>
+              <td>--</td>
+              <td>Decrement, menurunkan nilai -1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // pertambahan
+    let result = 1 + 2;
+    document.writeln('Ini hasil 1 + 2 = ' + result);
+    let originalResult = result; // 3
+    document.writeln('</br>');
+
+    // pengurangan
+    result = result - 1;
+    document.writeln(result);
+    originalResult = result; // 2
+    document.writeln('</br>');
+
+    // perkalian
+    result = result * 2;
+    document.writeln(result);
+    originalResult = result; // 4
+    document.writeln('</br>');
+
+    // pembagian
+    result = result / 2;
+    document.writeln(result);
+    originalResult = result; // 2
+  </script>
+</html>
