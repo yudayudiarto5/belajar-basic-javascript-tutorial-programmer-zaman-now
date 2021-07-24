@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Template</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <h2>Belajar String Template</h2>
+            <ul>
+                <li>
+                    Kita sudah tahu bahwa untuk menambahkan string dengan data lain,
+                    kita bisa menggunakan operator + (plus)
+                </li>
+                <li>
+                    Namun pada kasus tertentu, penggunaan operator +(plus) sangat
+                    menyulitkan, apalagi jika dalam jumlah banyak.
+                </li>
+                <li>
+                    <strong>Javascript memiliki fitur yang bernama String Template,</strong>
+                    dimana kita bisa mensubtitusi data dari luar string ke dalam string,
+                    seperti mengambil data variable, atau bahkan melakukan operasi
+                    matematika
+                </li>
+                <li>
+                    Untuk menggunakan string template,
+                    <strong>cara pembuatan String nya harus menggunakan ` (backtick)</strong>
+                    bukan ' (petik satu) atau " (petik dua). <strong>Gunakan kurung kurawal `${namaVariabel}`</strong>
+                </li>
+                <li>String template bisa juga menambahkan expresi!</li>
+                <li>String template bisa juga multiline, sedangkan penggunaan tanda petik biasa tidak bisa digunakan
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script>
+    // example string template, untuk kedepannya fitur string template ini sangat berguna sekali.
+    const nama = "Yuda Yudiarto JavaScript";
+    const nilai = 90;
+    // pakai ekspresi
+    const template = `Nama : ${nama}, Kelulusan : ${nilai > 75}`;
+
+    console.info(template);
+
+    const template2 = `<pre>
+        ini contoh
+    penggunaan multiline
+       dengan tag pre        
+        </pre>`
+
+    console.info(template2);
+</script>
+
+</html>
