@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Array</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <h2>Belajar Tipe Data Objek</h2>
+
+            <h4>Sebelumnya, di kata Associative Array</h4>
+            <ul>
+                <li>Di Bahasa pemrograman lain seperti PHP, kita bisa menggunakan index berupa tipe data lain selain
+                    number, misalnya menggunakan string</li>
+                <li>Fitur ini biasanya disebut associative array atau hash</li>
+                <li>Namun di JavaScript associative array tidak didukung.</li>
+                <li>Jika kita memaksa memasukkan data bukan <strong>number di index Array,</strong> maka JavaScript akan
+                    merubah tipe data Array tersebut menjadi objek dan ini bisa berbahaya, karena beberapa operasi di
+                    array mungkin bisa berubah hasilnya</li>
+            </ul>
+
+            <h4>Tipe Data Object</h4>
+            <ul>
+                <li>Tipe data object merupakan tipe data yang mirip dengan tipe data Array</li>
+                <li>Yang membedakan adalah <strong>index pada tipe data objek bisa menggunakan string</strong></li>
+                <li>Index di Objek biasanya disebut attributes atau properties, bukan index.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script>
+    // membuat object kosong
+    const orang = {};
+
+    // menambah atau mengubah property
+    orang["nama"] = "Yuda Yudiarto";
+    orang["alamat"] = "Bandung";
+    orang["npm"] = 17111277;
+
+    // menghapus 
+    delete orang["alamat"];
+    console.table(orang);
+
+    // ini lebih simpel dan keren lagi.
+    // Kode : Membuat Object dengan Properties / Attributes
+    const mahasiswa = {
+        // Jika property lebih dari 2 kata bisa menggunakan tanda petik "nama lengkap" atau nama_lengkap
+        nama: "Yuda Yudiarto OK",
+        npm: 17111277,
+        kelas: "TIF RM 17a"
+    };
+
+    console.table(mahasiswa);
+
+    // Kode : Mengakses Property Object
+    console.info(`Nama : ${mahasiswa.nama}`);
+    console.info(`NPM : ${mahasiswa.npm}`);
+</script>
+
+</html>
