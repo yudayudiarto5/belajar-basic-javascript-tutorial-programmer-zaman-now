@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Array</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <h2>Belajar Tipe Data Array</h2>
+            <ul>
+                <li>Array merupakan tipe data yang isinya kumpulan</li>
+                <li>Array di JavaScript bersifat dinamis, artinya data bisa bertambah dengan sendirinyaa saat kita
+                    memasukan data array baru.</li>
+            </ul>
+
+            <h2>Cara Kerja Array</h2>
+            <ul>
+                <li>
+                    Setiap array akan disimpan dalam posisi berurutan, dimana urutan pertama dimulai dari 0
+                </li>
+                <li>Setiap kita menambahkan data array baru, maka akan disimpan di urutan terakhir</li>
+                <li>Urutan Array, disebut dengan index</li>
+            </ul>
+
+            <table class="table">
+                <thead>
+                    <th>Operasi / Function</th>
+                    <th>Keterangan</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>namaArray.push(value)(</td>
+                        <td>Menambahkan data ke Array, boleh lebih dari 1 sekaligus</td>
+                    </tr>
+                    <tr>
+                        <td>namaArray.length</td>
+                        <td>Untuk mendapatkan panjang Array</td>
+                    </tr>
+                    <tr>
+                        <td>namaArray[index]</td>
+                        <td>Mendapatkan data di posisi Index</td>
+                    </tr>
+                    <tr>
+                        <td>namaArray[index] = value</td>
+                        <td>Mengubah atau Mengupdate data di array</td>
+                    </tr>
+                    <tr>
+                        <td>delete namaArray[index]</td>
+                        <td>Menghapus data di array, namun tidak menghapus index (jadi tidak bergeser)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Perlu di Ingat !</h4>
+            <p>
+                Data dalam array tidak ada batasannya, mau tipe data apapun bisa dimasukan sekaligus
+                Bahkan bisa kita masukan array ke array (biasa disebut multiple dimesi)
+            </p>
+        </div>
+    </div>
+</body>
+
+<script>
+    let arrayKosong = [];
+    let arrayNames = ["Yuda", "Yudiarto", "Programmer"];
+
+    console.table(arrayNames);
+
+    // Menambahkan data ke dalam array
+    arrayNames.push("Zaman", "Now");
+    console.table(arrayNames);
+
+    // Menghapus data di dalam array
+    delete arrayNames[2];
+    console.table(arrayNames);
+
+    // mengubah data di dalam array
+    arrayNames[0] = "Yudi";
+    console.table(arrayNames);
+
+    console.info(arrayNames.length);
+
+    // Array dalam array
+    let array2D = [
+        ["Yuda", "Yudi", 9],
+        ["Asap", "Asep", 7]
+    ];
+    console.table(array2D);
+</script>
+
+</html>
