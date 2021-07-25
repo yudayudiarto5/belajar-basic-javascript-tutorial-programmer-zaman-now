@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi String dan Number</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <h2>Belajar Konversi String dan Number</h2>
+            <ul>
+                <li>
+                    Saat membuat aplikasi, kadang input dari pengguna selalu dalam
+                    bentuk string
+                </li>
+                <li>Sedangkan kita ingin mengelola datanya dalam bentuk Number</li>
+                <li>Maka sangat disarankan untuk melakukan konversi tipe data</li>
+            </ul>
+
+            <table class="table">
+                <thead>
+                    <th>Function (fungsi)</th>
+                    <th>Keterangan</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>parseInt(string)</td>
+                        <td>Mengubah String ke Integer</td>
+                    </tr>
+                    <tr>
+                        <td>parseFloat(string)</td>
+                        <td>Mengubah String ke Float (Floating Point)</td>
+                    </tr>
+                    <tr>
+                        <td>Number(string)</td>
+                        <td>
+                            Mengubah String ke Number (hasilnya bisa berupa bilangan bulat
+                            maupun bilangan decimal)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>number.toString()</td>
+                        <td>Mengubah number ke string</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>NaN (Not a Number)</h4>
+            <ul>
+                <li>
+                    Jika data string yang kita konversi ke number bukan berupa data yang
+                    valid
+                </li>
+                <li>
+                    Maka data yang tidak valid tersebut menghasilkan NaN (Not a Number0
+                </li>
+                <li>
+                    NaN merupakan Number spesial yang menyebutkan bahwa ini bukan Number
+                </li>
+                <li>
+                    Selain itu, <strong>Data NaN jika dioperasikan dengan lainnya, tetap akan menjadi NaN</strong>
+                </li>
+                <li>
+                    Fungsi parseInt dan parseFloat akan mentolerir jika data yang
+                    didepannya memang berupa angka, contohnya "3xx" maka hasilnya 3.
+                    Namun fungsi Number() akan tetap tidak mentolerir
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script>
+    const value1 = parseInt('1');
+    const value2 = 1;
+    const sum = value1 + value2;
+
+    console.log(`<p> ${sum} </p>`);
+
+    // mengkonversi ke number
+    console.log(`<p> ${parseInt('3.9')} </p>`);
+    console.log(`<p> ${parseFloat('4.9')} </p>`);
+    console.log(`<p> ${Number('2.9')} </p>`);
+
+    // mengkonversi number ke string
+    const a = 1;
+    const b = 2;
+    const total = a.toString() + b.toString();
+    console.log(`<p> ${total} </p>`);
+
+    // contoh konversi String ke Number menghasilkan NaN
+    const nilai1 = "2a";
+    const nilai2 = 2;
+    const jumlahNilai = nilai1 + nilai2;
+    const jumlahNilai2 = 2.2 + nilai1;
+
+    console.info(`${parseInt(jumlahNilai)}`); // ini mentolerir angka 2
+    console.info(`${parseFloat(jumlahNilai2)}`); // ini mentolerir angka 2.22
+    console.info(`${Number(jumlahNilai2)}`); // ini mentolerir angka 2.22
+
+    // cek dengan isNan
+    console.info(`${isNaN(nilai2)}`);
+    console.info(`${isNaN(nilai1)}`);
+</script>
+
+</html>
