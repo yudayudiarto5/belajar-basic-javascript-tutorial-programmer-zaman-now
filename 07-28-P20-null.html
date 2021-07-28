@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Null</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <h2>Belajar Null</h2>
+            <p>Pada Javascript terdapat nilai Null, <strong>Nilai Null</strong> berbeda dengan <strong>Nilai
+                    undefined</strong> karena nilai Null itu nilainya sudah terisi yaitu Null. Sedangkan <strong>Nilai
+                    Undefined</strong> nilainya belum diisi (didefinisikan)</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    // contoh null
+    let namaLengkap = "Yuda Yudiarto";
+
+    if (namaLengkap === undefined) {
+        console.info("Nilainya Undefined");
+    } else if (namaLengkap === null) {
+        console.info("Nilainya Null");
+    } else {
+        console.info(`Nama Lengkap Anda adalah : ${namaLengkap}`);
+    }
+</script>
+
+</html>
