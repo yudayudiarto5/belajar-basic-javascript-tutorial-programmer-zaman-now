@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typeof</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <h2>Belajar Typeof</h2>
+            <p>
+                Tyopeof merupakan operator yang mempunyai fungsi untuk melihat tipe data yang digunakan pada sebuah
+                variable. Karena <strong>Javascript</strong> merupakan dynamic language maka kita perlu untuk mengetahui
+                tipe data yang digunakan dan akan menghasilkan sebuah string.
+            </p>
+        </div>
+
+        <!-- Type dan hasil yang typeof pada javascript -->
+        <h4>Type dan hasil yang typeof pada javascript</h4>
+        <table class="table">
+            <thead>
+                <th>Type</th>
+                <th>Hasil TypeOf</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Undefined</td>
+                    <td>"Undefined"</td>
+                </tr>
+                <tr>
+                    <td>Null</td>
+                    <td>"Null"</td>
+                </tr>
+                <tr>
+                    <td>Boolean</td>
+                    <td>"Boolean"</td>
+                </tr>
+                <tr>
+                    <td>Number</td>
+                    <td>"Number"</td>
+                </tr>
+                <tr>
+                    <td>BitInt</td>
+                    <td>"BitInt"</td>
+                </tr>
+                <tr>
+                    <td>String</td>
+                    <td>"String"</td>
+                </tr>
+                <tr>
+                    <td>Symbol</td>
+                    <td>"Symbol"</td>
+                </tr>
+                <tr>
+                    <td>Function</td>
+                    <td>"Function"</td>
+                </tr>
+                <tr>
+                    <td>Lainnya, seperti array, null</td>
+                    <td>"Object"</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<script>
+    // contoh penggunaan typeof
+    let data = 2;
+
+    const cekTypeData = typeof data;
+
+    console.info(`${cekTypeData}`);
+</script>
+
+</html>
