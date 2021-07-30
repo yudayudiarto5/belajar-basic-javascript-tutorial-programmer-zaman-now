@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do While Loop</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <h2>Belajar Do While Loop</h2>
+            <p>Do while loop hampir mirip dengan kondisi while loop, yang menjadi perberdaannya yaitu do while loop akan
+                mengeksekusi block perulangan minimal 1x, kenapa? Karena do while loop akan melakukan pengecekan kondisi
+                setelah block perulangan walaupun nilai awalnya false.</p>
+
+            <h4>Sintaks Perulangan While</h4>
+            <p>
+            <pre>
+                init statement; 
+                do {
+                    // block perulangan
+                    // post statement
+                }
+                while(kondisi);
+            </pre>
+            </p>
+            <p><strong>Keterangan</strong></p>
+            <li>Init statement hanya akan di eksekusi 1x saja di awal perulangan</li>
+            <li>Kondisi akan selalu dilakukan perulangan jika kondisinya true, dan akan berhenti jika kondisi false</li>
+            <li>Post statement akan selalu dieksekusi di akhir statement</li>
+            <li>Init statement, kondisi, dan post statement tidak wajib diisi, namun nanti hasilnya akan true sehingga
+                menyebabkan perulangan tanpa henti!</li>
+        </div>
+    </div>
+</body>
+
+<script>
+    // example simple do while loop
+
+    let counter = 1;
+    do {
+        document.writeln(`<p>Ini perulangan ke ${counter} </p>`);
+        counter++;
+    } while (counter <= 10);
+
+
+
+</script>
+
+</html>
