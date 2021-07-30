@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Loop</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <h2>Belajar For Loop</h2>
+            <p>For merupakan salah satu kunci yang digunakan untuk perulangan. Blok kode akan selalu diulangi jika
+                kondisi true</p>
+
+            <h4>Sintaks Perulangan For</h4>
+            <p>
+            <pre>for(init statement; kondisi; post statement) {
+                // block perulangan
+            }
+            </pre>
+            </p>
+            <p><strong>Keterangan</strong></p>
+            <li>Init statement hanya akan di eksekusi 1x saja di awal perulangan</li>
+            <li>Kondisi akan selalu dilakukan perulangan jika kondisinya true, dan akan berhenti jika kondisi false</li>
+            <li>Post statement akan selalu dieksekusi di akhir statement</li>
+            <li>Init statement, kondisi, dan post statement tidak wajib diisi, namun nanti hasilnya akan true sehingga
+                menyebabkan perulangan tanpa henti!</li>
+        </div>
+    </div>
+</body>
+
+<script>
+    // example simple for loop
+    for (let counter = 1; counter <= 10; counter++) {
+        document.writeln(`<p> Ini angka ke -  ${counter} </p>`)
+    }
+</script>
+
+</html>
