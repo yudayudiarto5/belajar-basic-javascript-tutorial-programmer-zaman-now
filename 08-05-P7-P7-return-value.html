@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Return Value</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <h2>Belajar Function Return Value</h2>
+            <h4>Function Return Value</h4>
+            <li>Secara default, function tidak menghasilkan value apapun, namun jika kita ingin, kita bisa membuat
+                sebuah function mengembalikan value</li>
+            <li>Agar function bisa menghasilkan value, kita bisa menggunakan kata kunci <strong>return</strong> di dalam
+                function nya</li>
+            <li>Dan di dalam block function, untuk menghasilkan nilai tersebut, kita harus menggunakan kta kunci return,
+                lalu diikui dengan data yang ingin kita hasilkan / cetak</li>
+            <li>Function hanya bisa mengembalikan satu data, jika kita ingin mengembalikan beberapa data sekaligus, kita
+                bisa menggunakan Array sebagai return value nya</li>
+
+            <h4>Menghentikan Eksekusi dengan Return</h4>
+            <li>Saat kita menggunakan kata kunci return, maka kode setelah return tersebut tidak akan dieksekusi</li>
+            <li>Kita bisa menggunakan return untuk Menghentikan eksekusi sebuah function</li>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    // Contoh penggunaan return value
+    // membuat function dengan parameter dan return value
+    function mahasiswa(nama, npm) {
+        const detail = `Hai, ${nama} ${npm}`;
+        return detail;
+    }
+
+    // memanggil function dan menangkap return value nya
+    const result = mahasiswa("Yuda Yudiarto", 17111277);
+    document.writeln(`<p> ${result} </p>`)
+
+
+    // Kode : Function return lebih dari satu
+    function predikatNilai(value) {
+        if (value > 90) {
+            return "A";
+        } else if (value > 80) {
+            return "B";
+        } else if (value > 70) {
+            return "C";
+        } else if (value > 60) {
+            return "D";
+        } else {
+            return "E";
+        }
+    }
+
+    const predikatMahasiswa = predikatNilai(91);
+    document.writeln(`<p> Anda mendapat predikat : ${predikatMahasiswa}`);
+
+
+    // kode : Menghentikan Eksekusi dengan return
+    function isContains(array, searchValue) {
+        for (const elementArray of array) {
+            console.info(`array ke ${elementArray}`); // cek iterasi
+            if (elementArray === searchValue) {
+
+                return true;
+            }
+        }
+        return false;
+    }
+
+    const isiArray = [2, 5, 20, 11, 2, 4, 5, 99, 5];
+    const cariSearch = 99;
+    const temukanArray = isContains(isiArray, cariSearch);
+    document.writeln(`<p> ${temukanArray} </p>`)
+
+</script>
+
+</html>
